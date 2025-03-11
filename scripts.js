@@ -29,14 +29,14 @@ document.getElementById('result').classList.add('visible');
     }
   
     // Display result
-    const cityElement = document.getElementById('city-name');
+    const cityElement = document.getElementById('city');
     cityElement.textContent = city;
     
     // Make the city name bold
     cityElement.style.fontWeight = 'bold';
 
     // Set the description text
-    document.getElementById('city-description').textContent = description;
+    document.getElementById('description').textContent = description;
     
     // Remove the hidden class to show the result section
     document.getElementById('result').classList.remove('hidden');
