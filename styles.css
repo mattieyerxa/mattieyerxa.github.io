@@ -47,12 +47,13 @@ body {
     background-color: #45a049;
   }
   
-  .hidden {
-    display: none;
-  }
-  
   #result {
+    display: none; /* Hide the result section initially */
     text-align: center;
     margin-top: 20px;
+  }
+  
+  .hidden {
+    display: none; /* Also hide any other sections with the 'hidden' class */
   }
   

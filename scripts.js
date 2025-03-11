@@ -34,6 +34,9 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
     // Make the city name bold
     cityElement.style.fontWeight = 'bold';
 
+    // Set the description text
     document.getElementById('city-description').textContent = description;
+    
+    // Remove the hidden class to show the result section
     document.getElementById('result').classList.remove('hidden');
 });
