@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midwest City Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Which Midwest City Should You Live In?</h1>
+    <p>Answer a few questions to find out!</p>
+
+    <form id="quiz-form">
+      <label for="interest1">Do you like outdoor activities?</label>
+      <select id="interest1" name="interest1">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="interest2">Are you into arts and culture?</label>
+      <select id="interest2" name="interest2">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="interest3">Do you prefer a slower-paced life?</label>
+      <select id="interest3" name="interest3">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <button type="submit">Find Your City!</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Your City: <span id="city-name"></span></h2>
+      <p id="city-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
