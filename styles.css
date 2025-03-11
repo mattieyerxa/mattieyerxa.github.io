@@ -48,12 +48,21 @@ body {
   }
   
   #result {
-    display: none; /* Hide the result section initially */
+    display: none;
     text-align: center;
     margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
   }
+  
+  #result.visible {
+    display: block;
+    opacity: 1;
+  }
+  
   
   .hidden {
     display: none; /* Also hide any other sections with the 'hidden' class */
   }
+
   

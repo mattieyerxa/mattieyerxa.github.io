@@ -1,6 +1,7 @@
 document.getElementById('quiz-form').addEventListener('submit', function(e) {
     e.preventDefault();
-  
+document.getElementById('result').classList.add('visible');
+
     // Get values from form
     const interest1 = document.getElementById('interest1').value;
     const interest2 = document.getElementById('interest2').value;
