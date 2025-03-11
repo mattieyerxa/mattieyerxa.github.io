@@ -28,8 +28,12 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
     }
   
     // Display result
-    document.getElementById('city-name').textContent = city;
+    const cityElement = document.getElementById('city-name');
+    cityElement.textContent = city;
+    
+    // Make the city name bold
+    cityElement.style.fontWeight = 'bold';
+
     document.getElementById('city-description').textContent = description;
     document.getElementById('result').classList.remove('hidden');
-  });
-  
+});
